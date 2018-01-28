@@ -80,6 +80,7 @@
 			<version>1</version>
 			<scope>compile</scope>
 		</dependency>
+		
 	</dependencies>
 	
 	<build>
@@ -103,4 +104,11 @@
 
 	<version>1</version>
 	<description>Project for Dorel Services</description>
+	  <repositories>
+	    <repository>
+	      <id>org.model</id>
+	      <name>Model-demo</name>
+	      <url>https://github.com/sudheeryellumanthi/circledemomodel.git</url>
+	    </repository>
+	  </repositories>
 </project>
