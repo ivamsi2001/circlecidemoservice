@@ -1,0 +1,13 @@
+<configuration scan="true" scanperiod="5 seconds">
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>/tmp/DorelAPI.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>[%level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36} - %msg%n</pattern>
+     </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="FILE">
+    </appender-ref></root>
+</configuration>
