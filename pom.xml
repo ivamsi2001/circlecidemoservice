@@ -104,11 +104,11 @@
 
 	<version>1</version>
 	<description>Project for Dorel Services</description>
-	  <repositories>
+	<!--   <repositories>
 	    <repository>
 	      <id>org.model</id>
 	      <name>Model-demo</name>
 	      <url>https://github.com/sudheeryellumanthi/circledemomodel.git</url>
 	    </repository>
-	  </repositories>
+	  </repositories> -->
 </project>
