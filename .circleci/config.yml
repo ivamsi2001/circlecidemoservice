@@ -23,7 +23,9 @@ jobs:
       - checkout
       - run: git clone -b master git@github.com:ivamsi2001/circledemomodel.git ../circledemomodel
       - run: cd ../circledemomodel
+      - run: ls
       - run: mvn install
+      - run: ls
       - run: cd repo
       # Download and cache dependencies
       - restore_cache:
