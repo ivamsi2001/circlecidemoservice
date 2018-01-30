@@ -21,7 +21,7 @@ jobs:
     
     steps:
       - checkout
-      - run: git clone -b model git@github.com:ivamsi2001/circledemomodel.git ../circledemomodel
+      - run: git clone -b master git@github.com:ivamsi2001/circledemomodel.git ../circledemomodel
       - run: cd ../circledemomodel
       - run: mvn install
       # Download and cache dependencies
