@@ -20,9 +20,10 @@ jobs:
       MAVEN_OPTS: -Xmx3200m
     
     steps:
+      - checkout
       - run: rm -rf ../circledemomodel
       - run: git clone -b master git@github.com:ivamsi2001/circledemomodel.git ../circledemomodel
-      - checkout
+      
       # Download and cache dependencies
       - restore_cache:
           keys:
