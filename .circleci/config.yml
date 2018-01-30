@@ -20,13 +20,8 @@ jobs:
       MAVEN_OPTS: -Xmx3200m
     
     steps:
-      - checkout
       - run: git clone -b master git@github.com:ivamsi2001/circledemomodel.git ../circledemomodel
-      - run: cd ../circledemomodel
-      - run: ls
-      - run: mvn install
-      - run: ls
-      - run: cd repo
+      - checkout
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -35,12 +30,12 @@ jobs:
           - v1-dependencies-
 
       - run: mvn dependency:go-offline
-
+      - run: -f ../circledemomodel/pom.xml clean install
       - save_cache:
           paths:
             - ~/.m2
           key: v1-dependencies-{{ checksum "pom.xml" }}
         
       # run tests!
-     # - run: mvn integration-test
+      # - run: mvn integration-test
 
